@@ -6,6 +6,9 @@ services:
     command: python /dockerprojects/manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/dockerprojects
+    environment:
+      - SECRET_KEY=e^!h7g*62$$h+798ba2ngs*%q21-2j0z=y+*tro2ybxv7#18316
+      - DEBUG=1
     ports:
       - 8000:8000
     depends_on:
