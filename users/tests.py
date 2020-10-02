@@ -9,11 +9,11 @@ class CustomUserTests(TestCase):
         User = get_user_model()
         user = User.objects.create_user(
             username='admin',
-            email='will@email.com',
-            password='testpass123'
+            email='admin@alshafigroup.com',
+            password='alshafi123*'
         )
-        self.assertEqual(user.username, 'will')
-        self.assertEqual(user.email, 'will@email.com')
+        self.assertEqual(user.username, 'admin')
+        self.assertEqual(user.email, 'admin@alshafigroup.com')
         self.assertTrue(user.is_active)
         self.assertFalse(user.is_staff)
         self.assertFalse(user.is_superuser)
