@@ -9,6 +9,8 @@ services:
     environment:
       - SECRET_KEY=e^!h7g*62$$h+798ba2ngs*%q21-2j0z=y+*tro2ybxv7#18316
       - DEBUG=1
+      - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_51HXl2eJfS5OFhOLCz8ol0NAer5JsHfqfohAb8CZjAmU7Uqgpt9JyExARqDOxN6DCUU1ejovj313s67H241mt8jtt00KCGCogcU
+      - STRIPE_TEST_SECRET_KEY=sk_test_51HXl2eJfS5OFhOLCga9MzWQjGXJqOhKmQHo0yYNfsxWynQeCIYYEtbEbXiOqVQLHxnl36OLa1ivWrCqiuOnPHKWX00Dc94FYuP
     ports:
       - 8000:8000
     depends_on:
